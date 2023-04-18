@@ -8,10 +8,10 @@ int mostrarVetor(int vet[]);
 int somaTotalVetor(int vet[]);
 int maiorMenorVetor(int vet[], int *maior, int *menor);
 int parVetor(int vet[]);
-//int imparVetor(int vet[]);
+int imparVetor(int vet[]);
 
 int main(){
-    int vet[N], maior, menor;
+    int vet[N], maior, menor, vetP[N];
     preencherVetor(vet);
     mostrarVetor(vet);
     printf("\n");
@@ -19,8 +19,11 @@ int main(){
     maiorMenorVetor(vet, &maior, &menor);
     printf("Maior........%d\n", maior);
     printf("Menor........%d\n", menor);
+    printf("\n");
     parVetor(vet);
-    //imparVetor(vet);
+    mostrarVetor(vet);
+    printf("\n");
+    imparVetor(vet);
 }
 
 int preencherVetor(int vet[]){
@@ -72,6 +75,15 @@ int parVetor(int vet[]){
     for(i = 0; i < N; i++){
         if(vet[i] % 2 == 0){
             printf("Par[%d] = %d\n", i, vet[i]);
+        }
+    }
+}
+
+int imparVetor(int vet[]){
+    int i;
+    for(i = 0; i < N; i++){
+        if(vet[i] % 2 != 0){
+            printf("Impar[%d] = %d\n", i, vet[i]);
         }
     }
 }
