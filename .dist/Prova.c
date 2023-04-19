@@ -21,6 +21,7 @@ int main(){
     printf("Menor........%d\n", menor);
     printf("\n");
     parVetor(vet);
+    printf("\n");
     mostrarVetor(vet);
     printf("\n");
     imparVetor(vet);
