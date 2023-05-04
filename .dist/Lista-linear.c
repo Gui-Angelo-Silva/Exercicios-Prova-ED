@@ -25,8 +25,8 @@ int main()
         switch (opcao)
         {
         case 1:
-            printf("\n\nInserir no início\n\n");
-            printf("Código....: ");
+            printf("\n\nInserir no inicio\n\n");
+            printf("Codigo....: ");
             scanf("%d", &infoNodo.codigo);
             printf("Nome......: ");
             scanf("%s", infoNodo.nome);
@@ -42,7 +42,7 @@ int main()
             mostrarLL(LL, IA, FA, IL, FL);
             break;
         case 0:
-            printf("\n\nJá vai tarde!!!\n\n");
+            printf("\n\nJa vai tarde!!!\n\n");
             break;
         default:
             printf("\n\nErrroouuu!!!\n\n");
@@ -54,11 +54,11 @@ int menu()
 {
     short opcao;
     printf("%%%%%%%%  M E N U %%%%%%%%%%\n");
-    printf("[1] Inserir no início\n");
+    printf("[1] Inserir no inicio\n");
     printf("[2] Mostrar\n");
     printf("[0] Sair\n");
     printf("%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n");
-    printf("Escolha uma opção: ");
+    printf("Escolha uma opcao: ");
     scanf("%hd", &opcao);
     return opcao;
 }
